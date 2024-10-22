@@ -1,0 +1,93 @@
+1//Add a new transaction (income or expense)
+send request
+post http://localhost:3000/transactions/
+Content-Type: application/json
+
+{
+    "title":"incentive",
+    "amount":10000, 
+    "type":"income", 
+    "category":"employement",
+    "date":"2024-10-23"
+}
+
+Response:
+
+Transaction Added Successfully
+
+
+2// GET /transactions/:id - Retrieve a specific transaction by ID
+send request
+GET http://localhost:3000/transactions/1/
+
+Response:
+{
+    "transactionId":1 
+    "title":"incentive",
+    "amount":10000, 
+    "type":"income", 
+    "category":"employement",
+    "date":"2024-10-23"
+}
+
+
+
+3// PUT /transactions/:id - Update a transaction by ID
+send request
+PUT http://localhost:3000/transactions/1
+Content-Type: application/json
+
+{
+    "title":"increment",
+    "amount":10000, 
+    "type":"income", 
+    "category":"employement",
+    "date":"2024-10-23"
+}
+
+Response:
+
+Transaction Updated Successfully
+
+
+4//DELETE /transactions/:id - Delete a transaction by ID 
+send request
+DELETE http://localhost:3000/transactions/2/
+
+Response:
+
+Transaction Deleted Successfully
+
+
+5//Retrieve a summary of transactions (total income, total expenses, balance)
+send request
+ GET http://localhost:3000/summary/
+
+Response:
+
+{
+	"totalIncome":77800,
+	"totalExpense":2512.25
+	"totalBalnce":75287.75
+
+}
+
+
+6//Retrieve All Transactions
+send request
+GET http://localhost:3000/transactions/
+
+Response:
+
+[{"transactionId":1,"title":"increment","amount":10000,"type":"income","category":"employement","date":"2024-10-23"},{"transactionId":3,"title":"Gym Membership","amount":50,"type":"expense","category":"Health","date":"2024-10-05"},{"transactionId":4,"title":"Freelance Work","amount":500,"type":"income","category":"Freelance","date":"2024-10-07"},{"transactionId":5,"title":"Restaurant Dinner","amount":75,"type":"expense","category":"Food","date":"2024-10-09"},{"transactionId":6,"title":"Internet Bill","amount":60,"type":"expense","category":"Utilities","date":"2024-10-10"},{"transactionId":7,"title":"Movie Night","amount":30,"type":"expense","category":"Entertainment","date":"2024-10-12"},{"transactionId":8,"title":"Consulting Income","amount":1200,"type":"income","category":"Freelance","date":"2024-10-15"},{"transactionId":9,"title":"Electricity Bill","amount":100,"type":"expense","category":"Utilities","date":"2024-10-18"},{"transactionId":10,"title":"Car Maintenance","amount":200,"type":"expense","category":"Transport","date":"2024-10-19"},{"transactionId":11,"title":"Bonus","amount":500,"type":"income","category":"Salary","date":"2024-10-20"},{"transactionId":12,"title":"Salary","amount":3000,"type":"income","category":"Salary","date":"2024-10-01"},{"transactionId":13,"title":"Groceries","amount":150.75,"type":"expense","category":"Food","date":"2024-10-02"},{"transactionId":14,"title":"Gym Membership","amount":50,"type":"expense","category":"Health","date":"2024-10-05"},{"transactionId":15,"title":"Freelance Work","amount":500,"type":"income","category":"Freelance","date":"2024-10-07"},{"transactionId":16,"title":"Restaurant Dinner","amount":75,"type":"expense","category":"Food","date":"2024-10-09"},{"transactionId":17,"title":"Internet Bill","amount":60,"type":"expense","category":"Utilities","date":"2024-10-10"},{"transactionId":18,"title":"Movie Night","amount":30,"type":"expense","category":"Entertainment","date":"2024-10-12"},{"transactionId":19,"title":"Consulting Income","amount":1200,"type":"income","category":"Freelance","date":"2024-10-15"},{"transactionId":20,"title":"Electricity Bill","amount":100,"type":"expense","category":"Utilities","date":"2024-10-18"},{"transactionId":21,"title":"Car Maintenance","amount":200,"type":"expense","category":"Transport","date":"2024-10-19"},{"transactionId":22,"title":"Bonus","amount":500,"type":"income","category":"Salary","date":"2024-10-20"},{"transactionId":23,"title":"Salary","amount":3000,"type":"income","category":"Salary","date":"2024-10-01"},{"transactionId":24,"title":"Groceries","amount":150.75,"type":"expense","category":"Food","date":"2024-10-02"},{"transactionId":25,"title":"Gym Membership","amount":50,"type":"expense","category":"Health","date":"2024-10-05"},{"transactionId":26,"title":"Freelance Work","amount":500,"type":"income","category":"Freelance","date":"2024-10-07"},{"transactionId":27,"title":"Restaurant Dinner","amount":75,"type":"expense","category":"Food","date":"2024-10-09"},{"transactionId":28,"title":"Internet Bill","amount":60,"type":"expense","category":"Utilities","date":"2024-10-10"},{"transactionId":29,"title":"Movie Night","amount":30,"type":"expense","category":"Entertainment","date":"2024-10-12"},{"transactionId":30,"title":"Consulting Income","amount":1200,"type":"income","category":"Freelance","date":"2024-10-15"},{"transactionId":31,"title":"Electricity Bill","amount":100,"type":"expense","category":"Utilities","date":"2024-10-18"},{"transactionId":32,"title":"Car Maintenance","amount":200,"type":"expense","category":"Transport","date":"2024-10-19"},{"transactionId":33,"title":"Bonus","amount":500,"type":"income","category":"Salary","date":"2024-10-20"},{"transactionId":34,"title":"Salary","amount":3000,"type":"income","category":"Salary","date":"2024-10-01"},{"transactionId":35,"title":"Groceries","amount":150.75,"type":"expense","category":"Food","date":"2024-10-02"},{"transactionId":36,"title":"Gym Membership","amount":50,"type":"expense","category":"Health","date":"2024-10-05"},{"transactionId":37,"title":"Freelance Work","amount":500,"type":"income","category":"Freelance","date":"2024-10-07"},{"transactionId":38,"title":"Restaurant Dinner","amount":75,"type":"expense","category":"Food","date":"2024-10-09"},{"transactionId":39,"title":"Internet Bill","amount":60,"type":"expense","category":"Utilities","date":"2024-10-10"},{"transactionId":40,"title":"Movie Night","amount":30,"type":"expense","category":"Entertainment","date":"2024-10-12"},{"transactionId":41,"title":"Consulting Income","amount":1200,"type":"income","category":"Freelance","date":"2024-10-15"},{"transactionId":42,"title":"Electricity Bill","amount":100,"type":"expense","category":"Utilities","date":"2024-10-18"},{"transactionId":43,"title":"Car Maintenance","amount":200,"type":"expense","category":"Transport","date":"2024-10-19"},{"transactionId":44,"title":"Bonus","amount":500,"type":"income","category":"Salary","date":"2024-10-20"},{"transactionId":45,"title":"incentive","amount":10000,"type":"income","category":"employement","date":"2024-10-23"},{"transactionId":46,"title":"incentive","amount":10000,"type":"income","category":"employement","date":"2024-10-23"},{"transactionId":47,"title":"incentive","amount":10000,"type":"income","category":"employement","date":"2024-10-23"},{"transactionId":48,"title":"incentive","amount":10000,"type":"income","category":"employement","date":"2024-10-23"},{"transactionId":49,"title":"incentive","amount":10000,"type":"income","category":"employement","date":"2024-10-23"}]
+
+
+
+
+
+
+
+
+
+
+
