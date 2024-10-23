@@ -44,3 +44,23 @@ Develop a RESTful API for managing personal financial records. Users can record 
 - Implement basic user authentication and link transactions to specific users.
 - Add pagination to the GET /transactions endpoint to handle large volumes of data.
 - Create an endpoint for generating reports, such as monthly spending by category.
+
+- ### Postman Request/Response Screenshots
+
+#### POST /transactions
+![POST-Transaction](./screenshots/add-new-transactions.png.png)
+
+#### GET /transactions
+![GET-Transactions](./screenshots/Retrive-the-all-transaction.png.png)
+
+#### GET /transactions by id
+![GET-Transactions-by-id](./screenshots/Retrive-the-specific-transactions-by-id.png.png)
+
+#### Update /transactions by id
+![UPDATE-Transactions-by-id](./screenshots/Update_transaction-by-id.png.png)
+
+#### Delete /transactions by id
+![DELETE-Transactions-by-id](./screenshots/Delee-transaction-by-id.png.png)
+
+#### Get /Summary
+![GET-Summary](./screenshots/Retrive-sumary-of-transaction.png.png)
