@@ -64,8 +64,3 @@ Develop a RESTful API for managing personal financial records. Users can record 
 
 #### Get /Summary
 ![GET-Summary](./screenshorts/Retrive-sumary-of-transaction.png.png)
-<br/>
-<div style="text-align: center;">
-<img src="https://github.com/Hemanth5225/Personal-Expense-Tracker/blob/master/screenshorts/Delete-transaction-by-id.png.png" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
-</div>
-<br/>
