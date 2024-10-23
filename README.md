@@ -48,24 +48,24 @@ Develop a RESTful API for managing personal financial records. Users can record 
 - ### Postman Request/Response Screenshots
 
 #### POST /transactions
-![POST-Transaction](./screenshots/add-new-transactions.png.png)
+![POST-Transaction](./screenshorts/add-new-transactions.png.png)
 
 #### GET /transactions
-![GET-Transactions](./screenshots/Retrive-the-all-transaction.png.png)
+![GET-Transactions](./screenshorts/Retrive-the-all-transaction.png.png)
 
 #### GET /transactions by id
-![GET-Transactions-by-id](./screenshots/Retrive-the-specific-transactions-by-id.png.png)
+![GET-Transactions-by-id](./screenshorts/Retrive-the-specific-transactions-by-id.png.png)
 
 #### Update /transactions by id
-![UPDATE-Transactions-by-id](./screenshots/Update_transaction-by-id.png.png)
+![UPDATE-Transactions-by-id](./screenshorts/Update_transaction-by-id.png.png)
 
 #### Delete /transactions by id
-![DELETE-Transactions-by-id](./screenshots/Delee-transaction-by-id.png.png)
+![DELETE-Transactions-by-id](./screenshorts/Delee-transaction-by-id.png.png)
 
 #### Get /Summary
-![GET-Summary](./screenshots/Retrive-sumary-of-transaction.png.png)
+![GET-Summary](./screenshorts/Retrive-sumary-of-transaction.png.png)
 <br/>
 <div style="text-align: center;">
-<img src="https://assets.ccbp.in/frontend/content/react-js/super-over-league-lg-output.png" alt="supe-over-league-output" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
+<img src="https://github.com/Hemanth5225/Personal-Expense-Tracker/blob/master/screenshorts/Delete-transaction-by-id.png.png" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
 </div>
 <br/>
