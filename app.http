@@ -35,7 +35,7 @@ Content-Type: application/json
 
 
 ###
-//DELETE /transactions/:id - Delete a transaction by ID 
+//DELETE /transactions/:id - Delete a transaction by ID  
 DELETE http://localhost:3000/transactions/2/
 
 ###
