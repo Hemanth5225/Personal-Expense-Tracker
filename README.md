@@ -51,7 +51,7 @@ Develop a RESTful API for managing personal financial records. Users can record 
 ![POST-Transaction](./screenshorts/add-new-transactions.png.png)
 
 #### GET /transactions
-![GET-Transactions](./screenshorts/Retrive-the-all-transaction.png.png)
+![GET-Transactions](./screenshorts/Retrive-the-all-transactions.png.png)
 
 #### GET /transactions by id
 ![GET-Transactions-by-id](./screenshorts/Retrive-the-specific-transactions-by-id.png.png)
@@ -60,7 +60,7 @@ Develop a RESTful API for managing personal financial records. Users can record 
 ![UPDATE-Transactions-by-id](./screenshorts/Update_transaction-by-id.png.png)
 
 #### Delete /transactions by id
-![DELETE-Transactions-by-id](./screenshorts/Delee-transaction-by-id.png.png)
+![DELETE-Transactions-by-id](./screenshorts/Delete-transaction-by-id.png.png)
 
 #### Get /Summary
 ![GET-Summary](./screenshorts/Retrive-sumary-of-transaction.png.png)
